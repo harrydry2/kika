@@ -1,7 +1,0 @@
-mixin soundcloudAlbum(imgUrl, scUrl, h2, h3)
-  .p2Section
-    .soundcloudContainer
-      img.src(src=`${imgUrl}`, alt="Album Photo" class="saCover")
-      iframe(scrolling="no" src=`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/${scUrl}&amp;color=dd4448&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false&amp;wmode=opaque` data-embed="true" frameborder="no" class="saAlbum")
-    h2= h2
-    h3= h3

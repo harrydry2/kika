@@ -1,1 +1,119 @@
-!function(t){function n(o){if(e[o])return e[o].exports;var i=e[o]={i:o,l:!1,exports:{}};return t[o].call(i.exports,i,i.exports,n),i.l=!0,i.exports}var e={};n.m=t,n.c=e,n.d=function(t,e,o){n.o(t,e)||Object.defineProperty(t,e,{configurable:!1,enumerable:!0,get:o})},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,n){return Object.prototype.hasOwnProperty.call(t,n)},n.p="",n(n.s=1)}([function(t,n,e){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var o=document.querySelector.bind(document),i=document.querySelectorAll.bind(document);Node.prototype.on=window.on=function(t,n){this.addEventListener(t,n)},NodeList.prototype.__proto__=Array.prototype,NodeList.prototype.on=NodeList.prototype.addEventListener=function(t,n){this.forEach(function(e){e.on(t,n)})},n.$=o,n.$$=i},function(t,n,e){t.exports=e(2)},function(t,n,e){"use strict";e(3);e(0);e(4),e(5)},function(t,n){},function(t,n,e){"use strict";var o=e(0),i=(0,o.$)(".scrollDownVideo"),r=(0,o.$)(".p1Container"),s=(0,o.$)(".fixedSection"),d=(0,o.$)(".p2Container"),p=(0,o.$)(".footerSection");(0,o.$)(".wrapper");i.style.width=window.innerWidth+"px",i.style.height=.5625*window.innerWidth+"px",r.style.height=.5625*window.innerWidth+"px",r.style.top="-"+.5625*window.innerWidth+"px",s.style.top="-"+.5625*window.innerWidth+"px",window.on("load",function(){setTimeout(function(){r.style.transform="translateY("+.5625*window.innerWidth+"px)",s.style.transform="translateY("+.5625*window.innerWidth+"px)",d.style.transform="translateY("+.5625*window.innerWidth+"px)",p.style.transform="translateY("+.5625*window.innerWidth+"px)",i.src+="&autoplay=1"},300),setTimeout(function(){i.style.opacity="1"},1300)}),i.on("click",function(){return i.paused?i.play():i.pause()}),window.on("resize",function(){i.style.width=window.innerWidth+"px",i.style.height=.5625*window.innerWidth+"px",r.style.height=.5625*window.innerWidth+"px",r.style.top="-"+.5625*window.innerWidth+"px",s.style.top="-"+.5625*window.innerWidth+"px",r.style.transform="translateY("+.5625*window.innerWidth+"px)",s.style.transform="translateY("+.5625*window.innerWidth+"px)",d.style.transform="translateY("+.5625*window.innerWidth+"px)",p.style.transform="translateY("+.5625*window.innerWidth+"px)"})},function(t,n,e){"use strict";(0,e(0).$)("input").on("keypress",function(t){13===t.keyCode&&t.preventDefault()})}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(1);
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(2);
+
+var _bling = __webpack_require__(3);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var $ = document.querySelector.bind(document);
+var $$ = document.querySelectorAll.bind(document);
+
+Node.prototype.on = window.on = function (name, fn) {
+  this.addEventListener(name, fn);
+};
+
+NodeList.prototype.__proto__ = Array.prototype; // eslint-disable-line
+
+NodeList.prototype.on = NodeList.prototype.addEventListener = function (name, fn) {
+  this.forEach(function (elem) {
+    elem.on(name, fn);
+  });
+};
+
+exports.$ = $;
+exports.$$ = $$;
+
+/***/ })
+/******/ ]);

@@ -1,0 +1,8 @@
+mixin header()
+  header
+    .mainHeader
+      a(href="/" class="logo") bs dating
+      if (!user)
+        a(href="/auth/facebook") Log In with facebook
+      else 
+        img.twitterImg(src=`${user.profileImg}` alt="Image Title")

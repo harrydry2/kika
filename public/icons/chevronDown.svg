@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="6" viewBox="0 0 8 6">
+  <defs>
+    <polygon id="clip-2-a" points="3.622 4.755 4.105 5.239 7.976 1.368 7.008 .401 4.105 3.303 1.202 .401 .235 1.368"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#1F364D" fill-opacity=".7" xlink:href="#clip-2-a"/>
+  </g>
+</svg>
