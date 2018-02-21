@@ -18,7 +18,15 @@ passport.use(
     {
       clientID: keys.facebook.clientID,
       clientSecret: keys.facebook.clientSecret,
-      callbackURL: "/auth/facebook/redirect"
+      callbackURL: "/auth/facebook/redirect",
+      profileFields: [
+        "id",
+        "displayName",
+        "name",
+        "gender",
+        "picture.type(large)",
+        "email"
+      ]
     },
     async (accessToken, refreshToken, profile, done) => {
       const currentUser = await Users.findOne({ facebookId: profile.id });
@@ -27,8 +35,8 @@ passport.use(
       } else {
         const newUser = await new Users({
           facebookId: profile.id,
-          username: profile.username,
-          profileImg: profile.photos[0].value.replace("normal", "400x400")
+          displayName: profile.displayName,
+          photo: profile.photos[0].value
         }).save();
         done(null, newUser);
       }

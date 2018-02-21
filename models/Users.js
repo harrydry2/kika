@@ -2,13 +2,13 @@ const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
 const userSchema = new mongoose.Schema({
-  username: {
-    type: String
-  },
   facebookId: {
     type: String
   },
-  profileImg: {
+  displayName: {
+    type: String
+  },
+  photo: {
     type: String
   }
 });

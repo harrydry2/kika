@@ -77,6 +77,22 @@ a {
   font-family: CamphorStd-HeavyItalic;
   src: url("/fonts/CamphorStd-HeavyItalic.woff2") format("woff"), url("/fonts/CamphorStd-HeavyItalic.woff") format("woff"); }
 
+@font-face {
+  font-family: pnBI;
+  src: url("/fonts/pnBI.woff2") format("woff"); }
+
+@font-face {
+  font-family: pnB;
+  src: url("/fonts/pnB.woff2") format("woff"); }
+
+@font-face {
+  font-family: pnM;
+  src: url("/fonts/pnM.woff2") format("woff"); }
+
+@font-face {
+  font-family: pnR;
+  src: url("/fonts/pnR.woff2") format("woff"); }
+
 body, html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -91,3 +107,53 @@ body {
 
 html {
   font-size: 10px; }
+
+header {
+  background: white;
+  padding: 0rem 10rem; }
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #F1F3F5;
+  padding: 1.9rem 0;
+  color: #1F364D; }
+
+.leftLogo {
+  display: flex;
+  align-items: center; }
+
+.fav {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px; }
+  .fav .favLogo {
+    width: 32px;
+    height: 32px;
+    transform: translateY(-1px); }
+
+.logo {
+  font-size: 2rem;
+  font-family: pnBI; }
+
+.addIdea {
+  font-size: 3rem;
+  font-family: CamphorStd-Bold;
+  margin-right: 2rem; }
+
+.twitterImg {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100px; }
+
+.subHeader {
+  font-family: CamphorStd-Medium;
+  font-size: 1.8rem;
+  color: #1F364D;
+  padding: 1.9rem 0; }

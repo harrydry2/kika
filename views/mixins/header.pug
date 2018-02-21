@@ -1,8 +1,14 @@
 mixin header()
   header
     .mainHeader
-      a(href="/" class="logo") bs dating
+      .leftLogo
+        .fav
+          img.favLogo(src="https://s3.eu-west-2.amazonaws.com/yeezydating/ye.png")
+        a.logo(href="/") Yeezy Dating
       if (!user)
-        a(href="/auth/facebook") Log In with facebook
+        a(href="/auth/facebook") Log In with Facebook
       else 
+        .addIdea +
         img.twitterImg(src=`${user.profileImg}` alt="Image Title")
+    .subHeader
+      h2 JEROME'S IN THE HOUSE
